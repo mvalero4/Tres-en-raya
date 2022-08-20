@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #282829ff;
+    color: white;
+    font-family: monospace;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+#tablero{
+    max-width: 420px;
+    max-height: 745px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid black;
+    margin: auto;
+}
+
+#tablero button{
+    background: transparent;
+    color: rgb(251, 255, 255);
+    width: 200px;
+    height: 170px;
+    max-width: 33.33%;
+    font-size: 7em;
+}
+
+#textoVictoria{
+    visibility: hidden;
+    color: chartreuse;
+}
