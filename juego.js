@@ -4,6 +4,9 @@ let puestas = 0;
 let partidaAcabada = false;
 let textoVictoria = document.getElementById("textoVictoria");
 let botones = Array.from(document.getElementsByTagName("button"));
+let reiniciar = document.querySelector(".reiniciar");
+
+reiniciar.addEventListener("click", reiniciarJuego);
 
 botones.forEach(x => x.addEventListener("click", ponerFicha));
 
@@ -53,7 +56,7 @@ function estado(){
     function sonIguales(...args){
         valores = args.map(x => x.innerHTML);
         if(valores[0] != "" && valores.every((x, i, arr) => x === arr[0])){
-            args.forEach(x => x.style.backgroundColor = "yellowgreen" );
+            args.forEach(x => x.style.backgroundColor = "#97f500" );
             return true;
         }
         else {
@@ -127,4 +130,8 @@ function ia(){
 
     botones[pos].innerHTML = "O";
     return pos;
+}
+
+function reiniciarJuego(){
+    location.reload();
 }

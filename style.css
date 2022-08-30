@@ -5,9 +5,15 @@
 }
 
 body{
-    background-color: #282829ff;
+    background-color: #1d1d1d;
     color: white;
     font-family: monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-titulo{
+    margin-top: 30px;
 }
 
 h1{
@@ -38,9 +44,35 @@ h2{
     height: 170px;
     max-width: 33.33%;
     font-size: 7em;
+    cursor: pointer;
 }
 
 #textoVictoria{
     visibility: hidden;
     color: chartreuse;
+}
+
+.contenedor-reiniciar{
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+section .reiniciar{
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgb(64, 189, 189);
+    border: 2px solid white;
+    color: black;
+    box-shadow: 0px 4px 3px 2px #1d1d1d;
+    cursor: pointer;
+}
+
+section .reiniciar:hover{
+    background-color: #dd2323;
+    color: white;
+    box-shadow: 0px 3px 2px 2px white;
+    transform: scale(1.1);
+    cursor: pointer;
 }
